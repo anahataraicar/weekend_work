@@ -3,8 +3,12 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+	
+reverse = ""
+string.each_char {reverse <<string.slice!(-1) }
+return reverse
 
-end
+end    
 
 # Driver code - don't touch anything below this line.
 puts "TESTING reverse_a_string..."
